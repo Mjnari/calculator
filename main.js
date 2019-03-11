@@ -25,13 +25,33 @@ function operate(operator, x, y) {
         return divide(x, y);
 }
 
-// set elements (is elements the right word?)
+// set elements
 const buttons = document.querySelectorAll("button");
-let display = document.querySelector("#display");
+const display = document.querySelector("#display");
 
+let displayValue = "";
+
+// buttons event listeners
 buttons.forEach((button) => {
-    button.addEventListener("click", () => {
-        if(button.parentElement.parentElement.id == "numbers")
+    // numbers
+    if (button.parentElement.parentElement.id == "numbers")
+        button.addEventListener("click", () => {
             display.value += button.id;
-    })
+            displayValue += button.id;
+        })
+
+    // operators
+    if (button.parentElement.id == "operators")
+        button.addEventListener("click", () => {
+            // do nothing if user has not entered a number yet
+            if (displayValue != "") {
+                console.log(button.id)
+                switch(button.id) {
+                    case "add":
+                    case "subtract":
+                    case "multiply":
+                    case "divide":
+                }
+            }
+        })
 });
