@@ -1,3 +1,5 @@
+// TODO: add "=" button to html and js
+
 const add = function (x, y) {
     return x + y;
 }
