@@ -72,6 +72,17 @@ buttons.forEach((button) => {
         })
     }
 
+    // decimal
+    if (button.id == "decimal"){
+        button.addEventListener("click", () => {
+            if (display.value == ""){
+                display.value += "0.";
+            } else if (display.value.indexOf(".") == -1){ // only add . if there is not already a .
+                display.value += ".";
+            }
+        });
+    }
+
     // operators
     if (button.getAttribute("class") == "operator"){
         button.addEventListener("click", () => {
