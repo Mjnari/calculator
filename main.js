@@ -68,7 +68,7 @@ buttons.forEach((button) => {
                 displayClear();
                 displayClearFlag = 0;
             }
-            display.value += button.id;
+            display.value += button.value;
         })
     }
 
