@@ -1,0 +1,33 @@
+#calculatorPanel{
+    background-color: brown;
+    text-align: center;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 40px;
+    width: 240px;
+    padding-top: 30px;
+    padding-bottom: 10px;
+}
+
+#display{
+    text-align: right;
+}
+
+#clear{
+    margin-top: 15px;
+    margin-bottom: 5px;
+}
+
+.row {
+    margin-top: 5px;
+}
+
+.number, .decimal {
+    background-color: rgb(50, 50, 214);
+    width: 20%;
+}
+
+.operator {
+    background-color: yellow;
+    width: 20%;
+}

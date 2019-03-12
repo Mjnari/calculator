@@ -84,7 +84,7 @@ buttons.forEach((button) => {
     }
 
     // operators
-    if (button.getAttribute("class") == "operator"){
+    if (button.getAttribute("class") == "operator" & button.id != "equal"){
         button.addEventListener("click", () => {
 
             if (display.value != "") { // do nothing if user has not entered a number yet
